@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- https://getbootstrap.com/docs/5.1/getting-started/javascript/#still-want-to-use-jquery-its-possible -->
+
+    <title>Cours JQuery - Introduction</title>
+    
+    <!-- Mes styles  -->
+    <link rel="stylesheet" href="">
+
+  </head>
+
+  <body>
+    <!-- =========================== -->
+    <!-- Navbar Bootstrap à corriger -->
+    <!-- =========================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-darks">
+
+      <div class="container-fluid">
+
+        <a class="navbar-brand text-danger" href="../jquery/index.html">jQuery</a>
+
+        <!-- button pour le menu burger -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- menu intro 01 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Introduction</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item active" href="../jquery/index.html">jQuery - introduction</a></li>
+              
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sélecteurs</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../jquery/index.html">Sélecteurs</a></li>
+                
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Evenements</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../02_evenements/">Evenements</a></li>
+          
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Entrainement</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../03_entrainement/">Entrainement</a></li>
+
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- fin nav -->
+
+      <header class="container-fluid text-center text-white bg-dark">
+        <div class="row">
+            <div class="col-12">
+              <h1 class="display-4">Cours jQuery - Introduction</h1>
+              <p class="lead text-danger">jQuery : "Write less do more"</p>
+            </div>
+        </div>
+        <!--  -->
+    </header>
+
+    <!-- =========================== -->
+    <!-- contenu principal -->
+    <!-- =========================== -->
+  <main class="container border border-primary p-2">
+    <div class="row">
+      <div class="col-4 bg-light m-2">
+        <h2>1/JQuery est une API</h2>
+        <p>JQuery est ce qu'on appelle une bibliothèque ou une API (application programming interface) Javascript, c'est à dire un ensemble de fonctions qui permettent d'écrire de manière condensée, les lignes de codes les plus utilisées en Javascript.</p>
+
+        <p class="small">La version 1.0 stable de JQuery a été crée en aout 2006 par un jeune homme de 22 ans du nom de John RESIG. Aujourd’hui nous en sommes à : JQuery JavaScript Library v3.5.1</p>
+
+        <p>On peut trouver <a href="https://jquery.com" target="_blank">JQuery (user interface) à cette adresse.</a></p>
+      </div> 
+      <!-- fin col -->
+
+      <div class="col-4">
+        <h3>jQuery écrit d'une manière plus condensée</h3>
+
+        <p>Nous allons souvent utiliser les fonctions Javascript qui permettent d'attraper les balises HTML et les animer, ainsi en Javascript nous allons écrire d'une certaine manière et en JQuery d'une manière plus condensée.</p>
+
+        <p class="bg-light p-2">jQuery est une bibliothèque JavaScript créée par John Resig en 2006 afin de faciliter la lecture et l’écriture du JavaScript. Une vingtaine de lignes de code en JavaScript correspond à quelques lignes seulement en jQuery. D’où le slogan : "Write less… Do more" ("on en écrit moi et on en fait plus").</p>
+      </div>
+      <!-- fin col -->
+
+      <div class="col-4 bg-primary text-white border border-warning">
+        <h4>Exemple</h4>
+
+        <ul>
+          <li>JavaScript :<code>document.getElementsBtTagName('p')[Ø].innerHTML = 'Je change le contenu du 1er p de tous les p avec JS.';</code></li>
+
+          <li>jQuery : <code>$('p:first').text('Et là je change le texte avec jQuery');</code></li>
+        </ul>
+      </div>
+      <!-- fin col -->
+    </div>
+    <!-- fin row -->
+
+    <div class="row p-2">
+
+      <div class="col-12 col-md-6">
+
+        <h2>2/ Intégration de jQuery</h2>
+        <p>La bibliothèque jQuery est un fichier JavaScript unique contenant tous ses DOM, événements, effets et fonctions qui peuvent donc être utilisés. On inclut ce fichier dans une page web par l’intermédiaire  d’un unLien vers une copie locale ou alors grâce à l’une des nombreuses copies disponibles serveurs publics.</p>
+      </div>
+
+      <h4>a/ Intégration jQuery - méthode d'intégration</h4>
+
+      <ul>
+        <li>Copie locale, dans le head ou en bas de page > un exemple : <code>&lt;script src="../jquery/jquery-3.5.1.js">&lt;/script></code></li>
+
+        <li>Copie chez Google : <code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">&lt;/script>
+        </code></li>
+
+        <li>Il existe deux versions une minifiée et une complète</li>
+      </ul>
+    </div>
+    <!-- fin col -->
+
+    <div class="col-12 col-md-6">
+      <p>A COMPLETER</p>
+    </div>
+    <!-- fin col -->
+
+    </div>
+    <!-- fin row -->
+
+  </main>
+  <!-- fin contenu principal -->
+
+    
+   <!-- =========================== -->
+   <!-- Pied de page -->
+   <!-- =========================== -->
+
+   <footer class="bg-dark text-white text-center">
+    <p>jQuery, Colombbus Suresnes 2021</p>
+   </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap 5 Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- jQuery en local -->
+   <script src="../jQuery/jQuery_3.6.0_compressee.min.js"></script>
+
+   <script>
+
+    //  ici on lance JS avec jquery pour une alerte avec confirm:
+     
+    $(document).ready(function() {
+       // ici on code à éxecuter
+       confirm('Bienvenue sur cette page qui utilise jQuery.');
+       console.log('jQuery est actif');
+     });
+
+
+     // il existe 3 manières, de plus en plus simples, d'appeller jQuery
+     
+     //1ère méthode :
+
+     jQuery(document).ready(function() {
+      console.info('1ère méthode');
+     });
+
+
+     //2ème méthode
+     
+     jQuery(function() {
+       //ici mon code à éxécuter
+      console.info('2ème méthode');
+     });
+
+
+     //3ème méthode (le symbole $ remplace "jQuery")
+
+     $(function() {
+       // ici mon code à éxécuter
+      console.info('3ème méthode');
+     });
+
+   </script>
+
+  </body>
+</html>
