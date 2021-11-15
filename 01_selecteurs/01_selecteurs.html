@@ -10,140 +10,154 @@
 
     <!-- https://getbootstrap.com/docs/5.1/getting-started/javascript/#still-want-to-use-jquery-its-possible -->
 
-    <title>Cours JQuery - Selecteurss</title>
+    <title>Cours JQuery - Selecteurs jQuery</title>
     
     <!-- Mes styles  -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../styles.css">
 
   </head>
   <body>
     <!-- =========================== -->
-    <!-- Navbar à corriger -->
+    <!-- Navbar Bootstrap à corriger -->
     <!-- =========================== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample05">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a  href="#" class="nav-link disabled">À propos</a>
-              </li>
-              <li class="nav-item">
-                <a  href="#" class="nav-link disabled">Services</a>
-              </li>
-              <li class="nav-item">
-                <a  href="#" class="nav-link disabled">Contact</a>
-              </li>
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
 
-      <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-darks">
+
+      <div class="container-fluid">
+
+        <a class="navbar-brand text-dark   " href="../jquery/index.html">jQuery</a>
+
+        <!-- button pour le menu burger -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- menu intro 01 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Introduction</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../jquery/index.html">jQuery - introduction</a></li>
+              
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sélecteurs</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item active" href="../jquery/index.html">Sélecteurs</a></li>
+                
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Evenements</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../02_evenements/">Evenements</a></li>
+          
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Entrainement</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../03_entrainement/">Entrainement</a></li>
+
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- fin nav BS -->
+
+      <header class="container-fluid text-center text-white bg-dark">
         <div class="row">
             <div class="col-12">
-              <h1 class="display-4">Cours jQuery</h1>
-              <p class="lead">Sélecteurs</p>
+              <h1 class="display-4">Cours jQuery - Sélecteurs</h1>
+              <p class="lead text-dark">jHello, Tom and Jerry !</p>
+            </div>
+
+            <div>
+              <a href="https://getbootstrap.com/docs/5.0/getting-started/javascript/">Un site à consulter !</a>
             </div>
         </div>
-        <!--  -->
-    </header>
+      </header>
+      <!-- fin header -->
 
     <!-- =========================== -->
     <!-- contenu principal -->
     <!-- =========================== -->
-  <main class="container border border-primary p-2">
-    <div class="row">
-      <div class="col-6 bg-light m-2">
-        <h2>1/JQuery est une API</h2>
-        <p>JQuery est ce qu'on appelle une bibliothèque ou une API (application programming interface) Javascript, c'est à dire un ensemble de fonctions qui permettent d'écrire de manière condensée, les lignes de codes les plus utilisées en Javascript.</p>
 
-        <p class="small">La version 1.0 stable de JQuery a été crée en aout 2006 par un jeune homme de 22 ans du nom de John RESIG. Aujourd’hui nous en sommes à : JQuery JavaScript Library v3.5.1</p>
+    <body>
 
-        <p>On peut trouver <a href="https://jquery.com" target="_blank">JQuery (user interface) à cette adresse.</a></p>
-      </div> 
-      <!-- fin col -->
+      <div class="row mb-4">       
+        <div class="col-4 bg-light">
+          <h2>Titre de niveau 2 // 1er h2</h2>
+          <p>Paragraphe 2</p>
+          <ol type="a">
+            <li id="vanusa">la fonction jquery <code>$()</code> est l'équivalent d'un document.querySelectorAll()</li>
+            <li id="vanusa">la méthode <code>eq()</code> permet de sélectionner en jQuery un indice ou une collection d'objet</li>
+            <li id="vanusa">la méthode <code>html()</code> remplace innertHTML pour récupérer ou redéfinir un contenu d'élément</li>
+          </ol>
+        </div>
 
-      <div class="col-6">
-        <h3>jQuery écrit d'une manière plus condensée</h3>
+        <div class="col-4">
+          <h2>Titre de niveau 2 // 2nd h2</h2>
+          <p>Paragraphe 3</p>
+          <ul>
+            <li id="vanusa2">Element 1 de la ul</li>
+            <li>Element 2 de la ul</li>
+          </ul>
+        </div>
 
-        <p>Nous allons souvent utiliser les fonctions Javascript qui permettent d'attraper les balises HTML et les animer, ainsi en Javascript nous allons écrire d'une certaine manière et en JQuery d'une manière plus condensée.</p>
-
-        <p class="bg-light p-2">jQuery est une bibliothèque JavaScript créée par John Resig en 2006 afin de faciliter la lecture et l’écriture du JavaScript. Une vingtaine de lignes de code en JavaScript correspond à quelques lignes seulement en jQuery. D’où le slogan : "Write less… Do more" ("on en écrit moi et on en fait plus").</p>
+        <div class="col-4">
+          <h2>Titre de niveau 2</h2>
+          <p>Paragraphe 4</p>
+        </div>  
       </div>
-      <!-- fin col -->
+      <!-- fin row -->
 
-      <div class="col-12 bg-primary text-white border border-warning">
-        <h4>Exemple</h4>
+      <div class="row mb-4">
+        <div class="col-12">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <strong class="bg-primary">Quibusdam velit enim, aliquam ducimus alias voluptatibus corrupti expedita magni laudantium perspiciatis</strong>
+            Quibusdam velit enim, aliquam ducimus alias voluptatibus corrupti expedita magni laudantium perspiciatis, 
 
-        <ul>
-          <li>JavaScript :<code>document.getElementsBtTagName('p')[Ø].innerHTML = 'Je change le contenu du 1er p de tous les p avec JS.';</code></li>
-
-          <li>jQuery : <code>$('p:first').text('Et là je change le texte avec jQuery');</code></li>
-        </ul>
-
-      </div>
-      <!-- fin col -->
-
-    </div>
-    <!-- fin row -->
-
-    <div class="row p-2">
-
-      <div class="col-12 col-md-6">
-
-        <h2>2/ Intégration de jQuery</h2>
-        <p>La bibliothèque jQuery est un fichier JavaScript unique contenant tous ses DOM, événements, effets et fonctions qui peuvent donc être utilisés. On inclut ce fichier dans une page web par l’intermédiaire  d’un unLien vers une copie locale ou alors grâce à l’une des nombreuses copies disponibles serveurs publics.</p>
-      </div>
-
-      <h4>a/ Intégration jQuery - méthode d'intégration</h4>
-
-      <ul>
-        <li>Copie locale, dans le head ou en bas de page > un exemple : <code>&lt;script src="../jquery/jquery-3.5.1.js">&lt;/script></code></li>
-
-        <li>Copie chez Google : <code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">&lt;/script>
-        </code></li>
-
-        <li>Il existe deux versions une minifiée et une complète</li>
-      </ul>
-    </div>
-    <!-- fin col -->
-
-    <div class="col-12 col-md-6">
-      <p>...</p>
-    </div>
-    <!-- fin col -->
-
-    <div class="col-12 col-md-6">
-        <figure>
+            <strong class="bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laboriosam, quae facilis, quos cum hic laudantium, maxime obcaecati maiores fugiat praesentium incidunt veritatis eaque ducimus ut nam aliquam excepturi modi.</strong> a sunt iure, explicabo fugiat! Officia asperiores eius cum?
             
-        </figure>
-    </div>
-    <!-- fin row -->
-
-  </main>
-  <!-- fin contenu principal -->
-
-    
+            <strong class="bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia fugit quaerat incidunt commodi hic? Vel, qui architecto! Quibusdam ex, magni fugiat, enim illum voluptas in nemo voluptatem officiis eveniet est!</strong></p>
+        </div>
+      </div>
+      <!-- fin row -->
 
 
+      <div class="row mb-4">
+        <div class="col-12">
+          <figure>
+            <img src="../img/tom-i-jerry-raskraski-1-min.jpg" alt="Une photo de Tom et Jerry" class="img-fluid" title="Tom et Jerry">
+            <figcaption>Tom and Jerry !</figcaption>
+          </figure>
+        </div>
+      </div>
+      <!-- fin row -->
 
    <!-- =========================== -->
    <!-- Pied de page -->
    <!-- =========================== -->
 
-   <footer class="bg-dark text-white">
-    <p>jQuery - Agence Colombbus 2021</p>
+   <footer class="bg-dark text-white text-center">
+    <span>jQuery - Agence Colombbus 2021</span>
    </footer>
 
 
@@ -156,41 +170,194 @@
    <script src="../jquery/jQuery_3.6.0_compressee.min.js"></script>
 
    <script>
-    //  ici on lance JS avec jquery pour une alerte avec confirm :
-     
-    $(document).ready(function() {
-       // ici on code à éxecuter
-       confirm('Bienvenue sur cette page qui utilise jQuery.');
-       console.log('jQuery est actif');
-     });
+   
+    // $("img") to select a img for element
+
+    // $(document).ready(function() {
+    // $("img").click(function(){
+    // $(this).hide();
+    // });
+    // });
+
+    // 1 en JS 
+    // let lesP = document.getElementsByTagName ('p');
+    //  console.log(lesP);
+
+    //  let enJS = document.getElementsByTagName('p')[0].innerHTML = 'Coucou du JavaScript';
+    //  console.log('enJS');
 
 
-     // il existe 3 manières, de plus en plus simples, d'appeller jQuery
-     
-     //1ère méthode :
-
-     jQuery(document).ready(function() {
-      console.info('1ère méthode');
-     });
+    // Même chose en jQuery
+    // Changer text du 1er paragraphe ( celui de la class LEAD) dans header
+    
+    $('p:first').text('Je change le text du premier p avec jQuery');
 
 
-     //2ème méthode :
-     
-     jQuery(function() {
-       //ici mon code à éxécuter
-      console.info('2ème méthode');
-     });
+    // Changer texte du second p
+    $('p:eq(1)').text('Je change le text du second p de la page');
+
+    console.log($('p:nth-of-type(2)'));
+
+    // 2 Séclections avec jQuery
+    // sélection en JS
+    console.log(document.getElementsByTagName('h2'));
+
+    // j'appelle j'affiche le contenu du h1 avec query selector et innertHTML
+    console.log(document.querySelector('h2').innerHTML);
+
+    console.log('------------');
+
+    // en jQuery
+    console.log($('h2'));
+    console.log($('h2')[0].innerHTML);
+
+    console.log('------------------');
 
 
-     //3ème méthode (le symbole $ remplace "jQuery") :
 
-     $(function() {
-       // ici mon code à éxécuter
-      console.info('3ème méthode');
-     });
+    //3 fonction $() et les méthodes eq(), html()
+
+    //a) la fonction jQuery $() est l'équivalent d'un document.querySelectorALL()
+    // b) La méthode eq() permet de sélectionner en jQuery un indice ou une collection d'objet
+    // c) La méthode html() remplace innerHTML pour récuperer ou redefinir un contenu d'élement
+
+    console.log($('h2').eq(1).html());
+
+    // Si je veux redéfinir le contenu du 2nd h2
+    $('h2').eq(1).html('<a href="#">Un titre h2 vers jQuery</a>');
+
+    console.log($('p').eq(3).text());
+
+    // Changer contenu p indice3 :
+    // $('p').eq(3).text('Ici je change le texte du paragraphe 4, indice 3');
+
+    // On peut également changer tous les contenus des p :
+    // $('p').html('Je change les p avec jQuery !');
+
+    //Et là, sur le h2 :
+    $('h2').html('Vive le jQuery ?!?!');
+
+    console.log('---------------');
+
+    //On peut mettre tout cela en variable
+    let leP4 = $('p').eq(3);
+    console.log(leP4);
+
+
+
+    // 4 La méthode css()
+    // La méthode css() applique des changements en css en remplacement de style()
+
+    $('li').css("color", "green");  
+    $('li#vanusa').css("background", "lightblue");
+    $('li#vanusa2').css("background", "pink ");
+
+    $('p').css({
+      'color' : 'white',
+      'background': 'grey',
+      'border': '4px solid purple',
+      'padding' : '20px',
+    });
+
+
+
+    // 5) Les méthodes append() et prepend() : ajouter tu text avant ou après
+
+    // ajouter du texte avant : append()
+    $('p').eq(2).prepend('<span class="bg-primary"> Coucou ! Du texte au debut d un elément </span>');
+
+    // ajouter du texte après
+    $('p').eq(2).append('<span class="bg-primary"> Coucou ! Du texte à la fin d un elément </span>');
+
+
+    // Je selectionne le ou le p class .lead pour le changer
+    console.log($('.lead'));
+
+    $('.lead').css({
+      'background-color': 'white',
+      'color' : 'grey',
+      'margin-left' : '100px',
+    });    
+
+
+    // EXO : sélectionner le h1 et les h2 pour mettre une étoile au début du texte/mot
+
+    console.log($('h1, h2'));
+    console.log('----------------');
+
+
+    console.log($('h1, h2'));
+    $('h1, h2').prepend('* ');
+    console.log('----------------');
+
+
+    // REVOIR MONDE : rien de marche depuis cette partie-là, avec les strong et text LOREM :
+
+    // 6) Manipulations de classes, avec addClass(), removeClass(), toggleClass(), hasClass()
+
+    console.log($('code'));
+
+    //addClass (chercher correction, car ça ne fonctionne pas) :
+    // Changer le 2eme strong
+    $('code').addClass('bg-success text-white');
+
+    $('strong').eq(1).addClass('bg-dark');
+
+    $('strong').eq(2).removeClass('bg-primary');
+
+
+    // Ici l info bulle marche si on laisse la souris dessus :
+
+    //hasClass() renvoie true ou false : a-t-il la classe ?   
+    
+    console.log ($('p').eq(0).hasClass('lead'));
+    //toggleClass() cf. 01-evenements.html (voir page telle...)
+
+    console.log('-------/-------');
+    // Manipulation d'attributs avec .attr() et .removeAttr()
+    // Ajouter un attribut avec attr()
+
+    $('h1').eq(0).attr('title', 'Write less... do more !');
+
+    console.info($('#toutou'));
+
+    console.log($('strong'));
+    //enlever un attribut là ou les valeurs de l'attribut
+    $('h2').removeAttr('class');
+    //enlever les attributs de deux élements dans un tableau
+    $('strong:eq(0), strong:eq(1)').removeAttr('class');
+
+    console.log ('--------8--------');
+    // Manipulations ds parents et des enfants
+    console.log($('figure').find('img'));
+    $('figure').find('img').attr('title', 'Tom et Jerry, mes héros de l enfance !');
+    
+    // Mini EXO
+    // Dans une variable monAlt récuperer l'attribut alt de img
+    // Afficher le contenu de cette variable dans figcaption
+    
+    let monAlt = $('figure').find('img').attr('alt');
+    console.log(monAlt);
+
+    // ici on fait afficher par des moyens différents (décommenter pour voir) le texte du alt dans figcaption
+
+    // 1) zfficher le contenu de cette variable dans figcaption :
+
+    // ($('figure').find('figcaption').html(monAlt));
+    $('figure').find('figcaption').html(monAlt).css({
+    'background-color' : 'purpre',
+    'text-align' : 'center',
+    'padding-top' : '10px',
+    'padding-bottom' : '10px',
+    'height' : '50px',
+    });
+    
+
+    // console.log($('figure').find('figcaption').html(monAlt));
+
+
 
    </script>
    <!-- fin script JS avec jQuery -->
-
   </body>
 </html>
