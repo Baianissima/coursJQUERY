@@ -10,7 +10,7 @@
 
     <!-- https://getbootstrap.com/docs/5.1/getting-started/javascript/#still-want-to-use-jquery-its-possible -->
 
-    <title>Cours JQuery - Introduction</title>
+    <title>JQuery - Introduction</title>
     
     <!-- Mes styles  -->
     <link rel="stylesheet" href="">
@@ -19,7 +19,7 @@
 
   <body>
     <!-- =========================== -->
-    <!-- Navbar Bootstrap à compléte -->
+    <!-- Navbar Bootstrap à compléter -->
     <!-- =========================== -->
 
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -151,13 +151,40 @@
     </div>
     <!-- fin col -->
 
-    <div class="col-12 col-md-6">
-      <p>A COMPLETER</p>
+    <div class="row p-2">
+     <div class="col-12">
+       <h2>3/ Comment sélectionner  des élements</h2>
+        <ul>
+          <li><code>$('p');</code> // Je sélectionne tous les p</li>
+          <li><code>$('p:first');</code>// Je sélectionne le 1er p trouvé</li>
+          <li><code>$('p:last');</code>// Je sélectionne le dernier p trouvé</li>
+          <li><code>$('p[unP]');</code>// Je sélectionne un p avec l'identifiant #unP</li>
+          <li><code>$('p:eq(1)');</code>// Je sélectionne le deuxième paragraphe trouvé</li>
+          <li><code>$('p:not(.rouge)');</code>// Je sélectionne tous les p sauf ceux qui ont la classe .rouge</li>
+          <li><code>$('.une-rouge');</code>// Je sélectionne tous les éléments ayant la classe .une-classe</li>
+          <li><code>$('#monId');</code>// Je sélectionne un p avec l'identifiant #monId pour id</li>
+          <li><code>$('p .unLine');</code>// Je sélectionne tous les éléments ayant la classe .unLine et descendant directement du p</li>
+          <li><code>$('p > .unLien');</code>// Je sélectionne seulement les éléments ayant la classe .unLien et descendants directement du p</li>
+          <li><code>$('.unLien + .visite');</code>// Je sélectionne les éléments ayant pour classe .visite précédés immédiatement d'un élément ayant pour classe .unLien</li>
+          <li><code>$('.unLien ~ .visite');</code>// Je sélectionne les éléments ayant pour classe .visite et précédés ou pas d'un élément ayant pour classe .unLien</li>
+          <li>etc.</li>
+          <li><a href="http://creersonsiteweb.net/page-jquery-selecteurs">Voir la liste complète sur ce site !</a> </li>
+        </ul>
+     </div>
+
+
     </div>
     <!-- fin col -->
 
-    </div>
-    <!-- fin row -->
+  </div>
+  <!-- fin row -->
+
+    
+
+
+
+
+
 
   </main>
   <!-- fin contenu principal -->

@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- https://getbootstrap.com/docs/5.1/getting-started/javascript/#still-want-to-use-jquery-its-possible -->
+
+    <title>JQuery - Les évènements</title>
+
+    <!-- les styles dans le html -->
+    <style>
+
+        .laClasse {
+            border: 10px solid greenyellow;
+        }
+
+        body {
+        background-color: yellow;
+        }
+
+        /* :root { */
+        /* --jaune-tendance: yellow; */
+        /* } */
+
+        /* #btn1, btn2, btn3, btn4, btn5, btn6 {
+        var(--jaune-tendance);
+        } */
+
+    </style>
+    
+    <!-- Mes styles  -->
+    <!-- <link rel="stylesheet" href="../styles.css"> -->
+
+  </head>
+  <body>
+    <!-- =========================== -->
+    <!-- Navbar Bootstrap à corriger -->
+    <!-- =========================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-darks">
+
+      <div class="container-fluid">
+
+        <a class="navbar-brand text-dark   " href="../jquery/index.html">jQuery</a>
+
+        <!-- button pour le menu burger -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- menu intro 01 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Introduction</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../jquery/index.html">jQuery - Evenements</a></li>
+              
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sélecteurs</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item active" href="../jquery/index.html">Sélecteurs</a></li>
+                
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Evenements</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../02_evenements/">Evenements</a></li>
+          
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Entrainement</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <li><a class="dropdown-item" href="../03_entrainement/">Entrainement</a></li>
+
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- fin nav BS -->
+
+      <header class="container-fluid text-center text-dark bg-light">
+        <div class="row">
+            <div class="container-fluid p-2">
+                <h1 class="display-1"></h1>
+                <p class="lead">Voici la suite pour jQuery !</p>
+              </div>
+
+            <div>
+              <a href="https://getbootstrap.com/docs/5.0/getting-started/javascript/">Un site à consulter !</a>
+            </div>
+        </div>
+      </header>
+      <!-- fin header -->
+
+    <!-- =========================== -->
+    <!-- contenu principal -->
+    <!-- =========================== -->
+
+    <body>           
+        
+
+        <div class="container m-4 p-4">
+            <main>
+                <div class="row border border-warning p-4">
+                    <div class="col-2">
+                        <button id="btn1" class="btn btn-outline-primary" title="btn1">Cliquez</button>
+                    </div>
+                
+                    <div class="col-2">
+                        <button id="btn2" class="btn btn-outline-warning" title="btn2">Doublecliquez</button>
+                    </div>
+                
+                    <div class="col-2">
+                        <button id="btn3" class="btn btn-outline-success" title="btn3">Affichez, masquez</button>
+                    </div>
+                
+                    <div class="col-2">
+                        <button id="btn4" class="btn btn-outline-danger" title="btn4">ToggleClass</button>
+                    </div>
+                
+                    <div class="col-2">
+                        <button id="btn5" class="btn btn-outline-primary" title="btn5">Passez sur moi</button>
+                    </div>
+                
+                    <div class="col-2">
+                        <button id="btn6" class="btn btn-outline-warning" title="btn6">Animez</button>
+                    </div>
+                </div>
+                 <!-- fin row -->
+            </main>
+        </div>
+         <!-- fin container -->
+   
+   <!-- =========================== -->
+   <!-- Pied de page -->
+   <!-- =========================== -->
+
+   <!-- <footer class="text-dark text-center">
+    <span>jQuery - Agence Colombbus 2021</span>
+   </footer> -->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap 5 Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- jQuery en local -->
+   <script src="../jquery/jQuery_3.6.0_compressee.min.js"></script>
+
+   <script>
+
+       // Exemple pour une fonction, on peut avoir ce code (ready veut dire "pret au cahrgement"):
+
+       $(document).ready(function() {
+           // le code à éxecuter au chargement de la page
+           $('h1').append('Les évènements');
+       })
+
+
+       //1ere fonction avec btn1 : sur le premier bouton
+
+        $('#btn1').click(function() {
+            $('h1').css ({
+            'color': 'red',
+            'text-decoration' : 'underline',
+            })
+       });
+
+
+       //2ème fonction avec btn2 : sur le 2ème bouton (bdl = double clique pour mettre le body en couleur du bcg-color)
+
+       $('#btn2').dblclick(function() {
+
+        // On fait à this un display none pour faire disparaitre le btn2
+            // $(this).css("display", "none");
+            // $(this).hide();
+
+            // $('body').css("background-color", "#a4c2e0");
+
+            $('body').css ({
+            'background-color': 'purple',
+            'text-transform' : 'uppercase',
+            // on fait passer tout le text en capitales avec uppercase
+            })
+       });
+
+
+       //3ème fonction btn3 : ici toggle fait monter le bouton et on ne voit plus le p lead, toggle est une sorte d'interrupteur/de bascule
+
+       $('#btn3').click(function() {
+           $('p').toggle();
+        });
+
+
+        //4ème fonction : btn4
+        $('#btn4').click(function() {
+           $('h1').toggleClass('laClasse');
+           //ici la classe sur le script style rajoute un border vert qd on clique
+        });
+
+
+        //5ème fonction : btn5, au passage du mouse/de la souris on ajoute la bordure rouge
+        $('#btn5').mouseenter(function() {
+           $('main').addClass('laClasse');
+        });
+
+        //avec mouseleave, au passage du mouse on enleve la bordure rouge
+        $('#btn5').mouseleave(function() {
+           $('main').removeClass('laClasse');
+        });
+
+        //Autre méthode
+        $('#btn5').hover(
+            function() {
+                $('.container').addClass('laClasse');
+        },
+            function() {
+                $('.container').removeClass('laClasse');
+            }
+        )
+
+
+
+        
+   </script>
+<!-- fin script JS avec jQuery -->
+  </body>
+</html>
